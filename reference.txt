@@ -1,0 +1,7 @@
+git commit 
+git add
+git status 
+git other stuff
+lol only need the first to 
+(and pull)
+
