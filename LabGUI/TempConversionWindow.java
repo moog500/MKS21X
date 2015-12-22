@@ -56,17 +56,22 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 		
 
 	public void FtoC(){
+	try {
 		int cels = (Integer.parseInt(t.getText()) - 32) * 5/9;
 		String strified = "This was your input: " + t.getText() + " This is your converted value: " +
 				cels;
 		System.out.println(strified);}
+	catch (IllegalArgumentException e) {
+		System.out.println("a number, not a fish.");}}
 
 	public void CtoF(){
+	try {
 		int fahr = (Integer.parseInt(t.getText()) * 9/5) + 32;
 		String strified2 = "This was your input: " + t.getText() + " This is your converted value: " +
 				fahr;
-		System.out.println(strified2);
-	}
+		System.out.println(strified2);}
+	catch (IllegalArgumentException e) {
+		System.out.println("a number, not a fish.");}}
 
 
 
